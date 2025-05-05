@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/paris.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Document</title>
+
 </head>
 <body>
     <div class="weather-app">
     <header>
-        <form class="search-form">
-            <input type="search" placeholder="Enter your city..." required class="search-input"/>
+        <form class="search-form" id="search-form">
+            <input type="search" placeholder="Enter your city..." required class="search-input" id="search-input"/>
             <input type="submit" value="search" class="search-button"/>
         </form>
     </header>
     <main>
         <div  class="weather-app-data">
-        <div><h1 class="current-city">Paris</h1>
-        <p class="current-details">Sunday 00:38, scattered clouds 
+        <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+        <p class="current-details">
+            <span id="current-date"> Tuesday 00:38</span>, scattered clouds 
             <br/>
             Humidity:
             <strong>66%</strong> ;Wind
@@ -29,7 +33,7 @@
     
         <div class="current-temp">
             <span class="temp-icon">⛅</span> 
-            <span class="temp-value">12 </span>
+            <span class="temp-value" id="current-temperature">12 </span>
             <span class="temp-unit">°C</span></div>
         </div>
     </main>
@@ -40,4 +44,5 @@
     </footer>
     </div>
 </body>
+<script src="src/nyc.js"></script>
 </html>
