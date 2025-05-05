@@ -57,6 +57,7 @@ main {
 
 .current-temp {
   font-size: 48px;
+  display: flex;
 }
 
 .current-city {
@@ -76,11 +77,14 @@ main {
 }
 
 .temp-icon {
-  position: relative;
-  top: -8px;
-  font-size: 40px;
+ position: relative;
+ top: 5px;
+  /*font-size: 30px;*/
   margin-right: 10px;
-  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  display: block;
+ 
 }
 
 .temp-value {
@@ -91,8 +95,8 @@ main {
 .temp-unit {
   font-size: 28px;
   position: relative;
-  top: -38px;
-}*/
+  top: 8px;
+}
 
 footer {
   border-top: 1px solid #f9f7fe;
