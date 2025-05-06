@@ -56,7 +56,7 @@ main {
 }
 
 .current-temp {
-  font-size: 48px;
+  /*font-size: 48px;*/
   display: flex;
 }
 
@@ -102,18 +102,25 @@ main {
   justify-content: space-around;
   margin-top: 30px;
 }
-.weather-date{
+
+.weather-forecast-date{
   text-align: center;
   color:rgba(39, 33, 66, 0.4) ;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
+   
 }
-.weather-icon{
-  font-size: 24px ;
+.weather-forecast-icon{
+  font-size: 38px ;
   text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 88px;
+  height: 88px;
 }
-.weather-temps {
+
+.weather-forecast-temps {
   text-align: center;
   color:#f65282;
   display: flex;
@@ -121,8 +128,9 @@ main {
   margin-top: 10px;
   font-size:12px;
 }
-.weather-temp{
-  padding:0 10px;
+.weather-forecast-temp{
+  padding:0 5px;
+
 }
 
 footer {
