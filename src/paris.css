@@ -64,6 +64,7 @@ main {
   font-size: 38px;
   font-weight: 900;
   margin: 0;
+  line-height: 48px;
 }
 .current-details {
   color: rgba(39, 33, 66, 0.4);
@@ -88,7 +89,8 @@ main {
 }
 
 .temp-value {
-  font-size: 80px;
+  font-size: 88px;
+  line-height: 88px;
   font-weight: bold;
 }
 
@@ -101,6 +103,7 @@ main {
   display:flex;
   justify-content: space-around;
   margin-top: 30px;
+  
 }
 
 .weather-forecast-date{
